@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{ font-size:12px; font-family:  arial; color:#555; line-height:18px;}
+
+/*************大圣插件模块begin*************/
+/*主框架*/
+.dashengAD{
+	width:239px;
+	float:left;
+	padding-left:10px;
+}
+
+/*顶部*/
+.ds_title{
+	width:239px; 
+	height:29px;
+	background:#cbcbcb url(../images/d_class_title.jpg) no-repeat right;
+	float:left;
+}
+.ds_title_left{
+	width:188px;
+	float:left;
+}
+.ds_title_right{
+	width:31px;
+	float:left;
+	padding-top:6px;
+	padding-right:20px; 
+}
+
+/*内容*/
+.ds_main{
+	width:239px; 
+	height:225px;
+	background:#e0e0e0; 
+	overflow:hidden;
+	float:left;
+}
+.ds_content{
+	width:239px; 
+	height:225px; 
+	padding-bottom:3px;
+	background:#e0e0e0;
+}
+.ds_content div {
+	width:219px;
+	height:225px;
+	padding-left:20px;
+	padding-top:20px;
+}
+.ds_content div a:link{ text-decoration:none; color:#003399;}
+.ds_content div a:visited {text-decoration:none; color:#003399;}
+.ds_content div a:hover{text-decoration:underline;color:#003399;}
+
+/*底部*/
+.ds_foot {
+	width:239px;
+	height:15px;
+	background:#e0e0e0;
+}
+
+/*按钮*/
+.ds_prev_btn {
+	width:15px;
+	height:16px;
+	cursor:pointer;
+	float:left;
+	background: #CCCCCC url(../images/back.jpg) no-repeat;
+}
+
+.ds_next_btn {
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	float:left;
+	background: #CCCCCC url(../images/next.jpg) no-repeat;
+}
+.ds_prev_btn_off {
+	width:15px;
+	height:16px;
+	cursor:pointer;
+	float:left;
+	background: #CCCCCC url(../images/back_off.jpg) no-repeat;
+}
+
+.ds_next_btn_off {
+	width:16px;
+	height:16px;
+	cursor:pointer;
+	float:left;
+	background: #CCCCCC url(../images/next_off.jpg) no-repeat;
+}
+/*************大圣插件模块end*************/

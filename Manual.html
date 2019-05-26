@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大圣广告切换特效--使用手册</title>
+<style type="text/css">
+*{ margin:0; padding:0;}
+body{ font-size:12px; font-family:  arial; color:#555; line-height:18px;}
+
+#box{
+	width:400px;
+	height:300px;
+	border:1px solid #0099FF;
+	margin-left:20px;
+	float:left;
+}
+#title{
+	width:400px;
+	height:30px;
+}
+#prevbtn{
+	width:30px;
+	height:20px;
+	text-align:center;
+	float:right;
+	margin:4px;
+	border:1px dashed #CCCCCC;
+}
+#nextbtn{
+	width:30px;
+	height:20px;
+	text-align:center;
+	float:right;
+	margin:4px;
+	border:1px dashed #CCCCCC;
+}
+#main{
+	width:400px;
+	height:240px;
+	border-top:1px solid #0099FF;
+	border-bottom:1px solid #0099FF;
+}
+#content{
+	width:390px;
+	height:230px;
+	margin:5px;
+	border:1px dashed #FF3300;
+}
+#content div{
+	width:380px;
+	height:95px;
+	margin:5px;
+	border:1px dashed #CC33FF;
+}
+#foot{
+	width:400px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+}
+#code{
+	width:380px;
+	height:280px;
+	border:1px solid #CCCCCC;
+	margin-left:20px;
+	float:left;
+	padding:10px;
+	background:#D7EBF0
+}
+#view{
+	width:900px;
+	border:1px solid #CCCCCC;
+	padding:10px;
+	margin:10px;
+}
+#remark{
+	width:900px;
+	border:1px solid #CCCCCC;
+	padding:10px;
+	margin:10px;
+}
+</style>
+</head>
+
+<body>
+<br />
+<h4>大圣广告切换特效--dashengAD v0.01版</h4>
+<div id="view">
+	<div id="box">
+		<div id="title">
+			<div id="prevbtn">&gt;&gt;</div>
+			<div id="nextbtn">&lt;&lt;</div>
+		</div>
+		<div id="main">
+			<div id="content">content
+				<div>tab1</div>
+				<div>tab2</div>
+			</div>
+		</div>
+		<div id="foot">foot</div>
+	</div>
+	<div id="code">
+		&lt;div id=&quot;box&quot;&gt;<br />
+		&nbsp;&nbsp;&lt;div id=&quot;title&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;prevbtn&quot;&gt;&amp;gt;&amp;gt;&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;nextbtn&quot;&gt;&amp;lt;&amp;lt;&lt;/div&gt;<br />
+		&nbsp;&nbsp;&lt;/div&gt;<br />
+		&nbsp;&nbsp;&lt;div id=&quot;main&quot;&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id=&quot;content&quot;&gt;content<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;tab1&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;tab2&lt;/div&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+		&nbsp;&nbsp;&lt;/div&gt;<br />
+		&nbsp;&nbsp;&lt;div id=&quot;foot&quot;&gt;foot&lt;/div&gt;<br />
+		&lt;/div&gt;
+	</div>
+</div>
+
+<div id="remark">
+	<h4>第一步、引用JS文件及CSS文件</h4>
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/dashengAD.css&quot; /&gt;<br />
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.3.2.min.js&quot;&gt;&lt;/script&gt;<br />
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.dashengAD.js&quot;&gt;&lt;/script&gt;
+	
+	<h4>第二步、插入JS代码</h4>
+	&lt;script language=&quot;javascript&quot;&gt;<br />
+	$(document).ready(function(){<br />
+	&nbsp;&nbsp;$(&quot;#ds_box&quot;).dashengAD({<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;way:	&quot;rollh&quot;,//显示方式:show|fade|slide|rollh|rollv 默认值:fade<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;speed: 	&quot;slow&quot;,	//显示速度:&quot;fast&quot;|&quot;nomarl&quot;|&quot;slow&quot;|(毫秒数) 默认值:&quot;nomarl&quot;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;loop:true,		//无缝轮滚:true|false 默认值:false<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;auto:true,		//自动滚动:true|false 默认值:false<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;delay:2			//自滚延时:(秒) 默认值:3<br />
+	&nbsp;&nbsp;});<br />
+	});<br />
+	&lt;/script&gt;
+</div>
+
+</body>
+</html>
